@@ -1,0 +1,29 @@
+.Blog .lander {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.Blog .lander h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    left: 0;
+    line-height: 200px;
+    margin: auto;
+    margin-top: -100px;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+
+.Blog .lander h6 {
+    color: #999;
+    left: 0;
+    line-height: 200px;
+    margin: auto;
+    margin-top: -100px;
+    position: absolute;
+    top: 43.5%;
+    margin-left: 1020px;
+    /* width: 144%; */
+
+}
