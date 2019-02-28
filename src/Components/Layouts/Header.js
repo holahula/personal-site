@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { AppBar, Toolbar, Typography, Button, IconButton } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import Routes from "../../Routes";
+
 // import { About, Home, NotFound } from '../containers'
 // import MenuIcon from '@material-ui/icons/Menu';
 
@@ -33,6 +34,7 @@ const styles = theme => ({
   }
 });
 
+
 function ButtonAppBar(props) {
   const { classes } = props;
   return (
@@ -50,13 +52,14 @@ function ButtonAppBar(props) {
           >
             home
           </Button>
+          {/* <Button color="primary" component={Link} to="/About">About</Button> */}
           <Button color="primary" component={Link} to="/Blog">Blog</Button>
           <Button 
             classname={classes.button} 
             color="primary.dark" 
             variant="outlined" 
             target="_blank"  
-            href="https://s3.amazonaws.com/austin-resume/resume_ww_final.pdf"
+            href="https://s3.amazonaws.com/austin-resume/resumev2.pdf"
           >
             Resume
           </Button>
