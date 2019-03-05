@@ -1,6 +1,6 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import { Button, AppBar, Typography, Toolbar } from '@material-ui/core'
+import { Button, AppBar, Typography, Toolbar, Hidden } from '@material-ui/core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faGithubAlt, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -105,14 +105,16 @@ function BottomAppBar(props) {
             {/* <Typography textAlign="center">
               Howdy
             </Typography> */}
-            <Typography variant="body1" color="primary" className={classes.typo}>
-              powered by coffee 
-              <FontAwesomeIcon 
-                color = "#283593"
-                icon={faCoffee} 
-                size='md'
-              className={classes.coffee}/>
-            </Typography>
+            <Hidden xsDown>
+              <Typography variant="body1" color="primary" className={classes.typo}>
+                powered by coffee 
+                <FontAwesomeIcon 
+                  color = "#283593"
+                  icon={faCoffee} 
+                  size='md'
+                className={classes.coffee}/>
+              </Typography>
+            </Hidden>
             {/* <Icon className={classNames(classes.icon, 'fa fa-plus-circle')} color="dark" /> */}
           
           </div>

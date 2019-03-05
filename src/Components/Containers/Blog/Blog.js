@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Blog.css";
-import { Typography } from "@material-ui/core";
+import { Typography, Hidden } from "@material-ui/core";
  
 
 
@@ -12,9 +12,11 @@ export default class Blog extends Component {
           <Typography variant="h1" color="primary">
             coming soon
           </Typography>
-          <Typography variant="h6" color="secondary">
-            tm
-          </Typography>
+          <Hidden xsDown>
+            <Typography variant="h6" color="secondary">
+              tm
+            </Typography>
+          </Hidden>
           <br></br>
         </div>
       </div>

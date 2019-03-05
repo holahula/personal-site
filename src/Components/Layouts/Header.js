@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import { AppBar, Toolbar, Typography, Button, IconButton } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Button, IconButton, Hidden } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import Routes from "../../Routes";
 
@@ -43,9 +43,16 @@ function ButtonAppBar(props) {
         <Toolbar>
           <IconButton className={classes.menuButton} color="default" aria-label="Menu">
           </IconButton>
-          <Typography variant="h6" color="secondary" className={classes.grow}>
-            Austin Jiang
-          </Typography>
+          <Hidden xsDown>
+            <Typography variant="h6" color="secondary" className={classes.grow}>
+              Austin Jiang
+            </Typography>
+          </Hidden>
+          <Hidden smUp>
+            <Typography variant="h6" color="secondary" className={classes.grow}>
+              Austino
+            </Typography>
+          </Hidden>
           <Button 
             color="primary" 
             component={Link} to="/"
