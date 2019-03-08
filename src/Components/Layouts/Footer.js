@@ -78,7 +78,7 @@ function BottomAppBar(props) {
               </Button>
               < Button 
                 target = "_blank"
-                href = "https://github.com/holahula"
+                href = "https://github.com/jiang-austin"
                 className = {classes.button} 
               >
                 <FontAwesomeIcon 
