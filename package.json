@@ -27,7 +27,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "predeploy": "yarn run build",
+    "predeploy": "npm run build",
     "deploy": "aws s3 sync build/ s3://austin-jiang.com --delete",
     "postdeploy": "aws cloudfront create-invalidation --distribution-id E2537DEMQTO3VT --paths '/*' && aws cloudfront create-invalidation --distribution-id E57X7I5B5YYKA --paths '/*'",
     "eject": "react-scripts eject"
