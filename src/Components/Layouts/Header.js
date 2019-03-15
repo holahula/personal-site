@@ -50,7 +50,7 @@ function ButtonAppBar(props) {
           </Hidden>
           <Hidden smUp>
             <Typography variant="h6" color="secondary" className={classes.grow}>
-              Austino
+              Austin
             </Typography>
           </Hidden>
           <Button 
