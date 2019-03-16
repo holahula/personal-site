@@ -47,8 +47,8 @@ jobs:
 
       #run tests!
       - run: 
-        name: run tests
-        command: jest --collectCoverage=true
+          name: run tests
+          command: jest --collectCoverage=true
       
       - store_artifacts:
           path: coverage
