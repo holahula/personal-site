@@ -45,8 +45,14 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      # run tests!
-      # - run: npm test
+      #run tests!
+      - run: 
+        name: 
+        command: jest --collectCoverage=true
+      
+      - store_artifacts:
+          path: coverage
+          # npm test
 
       - run: 
           name: Deploy to S3
