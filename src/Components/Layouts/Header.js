@@ -66,7 +66,7 @@ function ButtonAppBar(props) {
             color="primary.dark" 
             variant="outlined" 
             target="_blank"  
-            href="https://s3.amazonaws.com/austin-resume/resumemarch19.pdf"
+            href="https://s3.amazonaws.com/austin-resume/resume-march-2019.pdf"
           >
             Resume
           </Button>
