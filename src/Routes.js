@@ -16,8 +16,6 @@ export default () =>
           <Route path="/" exact component={Home} />
           <Route path="/about" exact component={About} />
           <Route path="/blog" exact component={Blog} />
-          {/* <Route path="/" exact component={Home} /> */}
-
           { /* Finally, catch all unmatched routes */ }
           <Route component={NotFound} />
         </Switch>

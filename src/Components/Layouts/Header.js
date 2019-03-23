@@ -59,7 +59,7 @@ function ButtonAppBar(props) {
           >
             home
           </Button>
-          {/* <Button color="primary" component={Link} to="/About">About</Button> */}
+          <Button color="primary" component={Link} to="/About">About</Button>
           <Button color="primary" component={Link} to="/Blog">Blog</Button>
           <Button 
             classname={classes.button} 
