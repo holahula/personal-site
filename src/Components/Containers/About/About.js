@@ -1,83 +1,66 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import "./About.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { Typography } from "@material-ui/core";
-import Swiper from 'react-id-swiper';
 
-const swiperParams = {
-  effect: 'coverflow',
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: 'auto',
-  coverflowEffect: {
-    rotate: 50,
-    stretch: 0,
-    depth: 100,
-    modifier: 10,
-    slideShadows: true
-  },
-  pagination: {
-    el: '.swiper-pagination'
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  }
-};
-export default class About extends Component {
+import Swiper from 'react-id-swiper';
+import { Virtual, Keyboard, Pagination, Navigation, EffectCoverflow } from 'swiper/dist/js/swiper.esm'
+
+class About extends Component {
+
   render() {
+    const swiperParams = {
+      speed: 350,
+      modules: [Keyboard, Pagination, Navigation, EffectCoverflow],
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true
+      },
+      keyboard: {
+        enabled: true,
+      },
+      // pagination: {
+      //   el: '.swiper-pagination',
+      //   type: 'bullets',
+      // },
+      navigation: {
+        hideOnClick: true,
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    };
+
     return (
-      <Swiper> 
-        <div className="slider">
-      
-          < div className = "slide current" >
-            <div className="content">
-              < h1 >
-              <Typography variant='h4' color='primary'>
-                Slide three
+      <div>
+        <Swiper {...swiperParams}>
+          <div className="slide1 slider">
+            <div className="slide content">
+              <Typography variant='h6'>
+                Blade Runner 2049 
               </Typography>
-              </h1>
-              <p> 
-                <Typography variant='body2' color='primary'>
-                  Hello World
-                </Typography>
-              </p>
             </div>
           </div>
-          <div className="slide">
-            <div className="content">
-              < h1 >
-              <Typography variant='h4' color='primary'>
-                Slide four
-              </Typography>
-              </h1>
-              <p> 
-                <Typography variant='body2' color='primary'>
-                  Hello World
-                </Typography>
-              </p>
-            </div>
-          </div>
-          <div className="slide">
-          </div>
-          <div className="buttons">
-            <button id="prev">
-              <FontAwesomeIcon 
-                    // color = "#fff"
-                    icon={faArrowLeft} 
-                    size='lg'/>
-            </button>
-            <button id="next">
-              <FontAwesomeIcon 
-                    // color = "#fff"
-                    icon={faArrowRight} 
-                    size='lg'/>
-            </button>
-          </div>
-        </div>
-      </Swiper>
+          <div className="slide2 slider"></div>
+          <div className="slide3 slider">Slide 2</div>
+          <div className="slide4 slider">Slide 2</div>
+          {/* <div className="swiper-pagination"></div> */}
+        </Swiper>
+
+         
+      </div>
+      // <Swiper {...swiperParams}> 
 
     );
   }
 }
+
+export default About;
+
