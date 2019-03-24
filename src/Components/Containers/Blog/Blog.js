@@ -34,7 +34,7 @@ export default class Blog extends Component {
               while you're here
             </Typography>
 
-            <Button style={{fontSize: '18px', textTransform: 'lowercase'}} color="primary" size="md" component={Link} to="/Movies">Some of my favorite movies</Button>
+            <Button style={{fontSize: '18px', textTransform: 'lowercase'}} color="primary" size="md" component={Link} to="/movies">Some of my favorite movies</Button>
 
           </Hidden>
           <br></br>

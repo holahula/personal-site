@@ -34,7 +34,6 @@ const styles = theme => ({
   }
 });
 
-
 function ButtonAppBar(props) {
   const { classes } = props;
   return (
