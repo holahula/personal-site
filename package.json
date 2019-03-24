@@ -42,8 +42,7 @@
     "extends": "react-app"
   },
   "jest": {
-    "resetModules": true,
-    "verbose": true
+    "resetModules": true
   },
   "browserslist": [
     ">0.2%",
