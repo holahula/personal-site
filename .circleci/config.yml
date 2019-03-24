@@ -45,11 +45,13 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      #run tests!
-      # - run: 
-      #     name: run tests
-      #     # command: npm test -- --coverage
-      #     command: npm test
+
+      #TODO: tests are not currently running b/c of an error with Jest / Babel / Webpack and Swiper / Dom7
+      # run tests!
+      - run: 
+          name: run tests
+          # command: npm test -- --coverage
+          # command: npm test --dry
           
       - store_artifacts:
           path: coverage

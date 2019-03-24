@@ -13,7 +13,7 @@ const titles = [
   'Interstellar',
   'Arrival',
 ];
-const posters = require.context('./Posters', true);
+// const posters = require.context('./Posters', true);
 
 class Movies extends Component {
   constructor() {
