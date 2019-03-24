@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.6;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 65vh;
+  width: 60vw;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-top: 12vh;
+  bottom: 0px;
+  /* object-position: 10%; */
+  outline: 0px dotted green;
+  outline-color: #ffffff;
+}
+
+.slide {
+  position: absolute;
+  bottom: 0;
+  /* margin-left: 16%; */
+  width: 25%;
+  height: 15%;
+  opacity: 1;
+  outline: 0px dotted green;
+  outline-color: #333;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.slide.content {
+  position: absolute;
+  text-align: center;
+  /* padding: 20px;
+  padding-bottom: 20px; */
+  margin-bottom: 20px;
+}
+.movieTitle{
+  padding-top: 30px;
+  text-align: center;
+}
+.br {
+  position: relative;
+  /* bottom: 0; */
+  margin-top: 60%;
+  text-align: center;
+}
+.swiper-button-prev.customize-colour {
+  color: #fff,
+}
+
+/* Background Images */
+
+/* .slide:first-child { */
+.slide1{
+  background: url('./Posters/blade-runner-2049.jpg') no-repeat center top/cover ;
+  background-size: cover;
+}
+
+.slide2 {
+  background: url('./Posters/whiplash.jpg') no-repeat center top/cover;
+  background-size: cover;
+}
+
+.slide3 {
+  background: url('./Posters/carol-2.jpg') no-repeat center top/cover;
+  /* background-size: contain; */
+}
+
+.slide4 {
+  background: url('./Posters/inside-out.jpg') no-repeat center top/cover;
+  /* background-size: contain; */
+}
+
+.slide5 {
+  background: url('./Posters/interstellar.jpg') no-repeat center top/cover;
+  background-size: contain;
+}
+
+.slide6 {
+  background: url('./Posters/arrival.jpg') no-repeat center top/cover;
+}

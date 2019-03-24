@@ -111,7 +111,7 @@ function BottomAppBar(props) {
                 <FontAwesomeIcon 
                   color = "#283593"
                   icon={faCoffee} 
-                  size='md'
+                  size='sm'
                 className={classes.coffee}/>
               </Typography>
             </Hidden>

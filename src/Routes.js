@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import { Home, About, NotFound, Blog} from "./Components/Containers";
+import { Home, About, NotFound, Blog, Movies} from "./Components/Containers";
 import "./Routes.css";
 // import Home from "./containers/Home.js"
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
@@ -16,6 +16,7 @@ export default () =>
           <Route path="/" exact component={Home} />
           <Route path="/about" exact component={About} />
           <Route path="/blog" exact component={Blog} />
+          <Route path="/movies" exact component={Movies} />
           { /* Finally, catch all unmatched routes */ }
           <Route component={NotFound} />
         </Switch>

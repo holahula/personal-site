@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import { AppBar, Toolbar, Typography, Button, IconButton, Hidden } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import Routes from "../../Routes";
+import Routes from "../../../Routes";
 
 // import { About, Home, NotFound } from '../containers'
 // import MenuIcon from '@material-ui/icons/Menu';
@@ -59,11 +59,11 @@ function ButtonAppBar(props) {
           >
             home
           </Button>
-          <Button color="primary" component={Link} to="/About">About</Button>
-          <Button color="primary" component={Link} to="/Blog">Blog</Button>
+          {/* <Button color="primary" component={Link} to="/About">About</Button> */}
+          <Button color="primary" component={Link} to="/blog">Blog</Button>
           <Button 
-            classname={classes.button} 
-            color="primary.dark" 
+            className={classes.button} 
+            color="default" 
             variant="outlined" 
             target="_blank"  
             href="https://s3.amazonaws.com/austin-resume/Austin-Jiang-Resume.pdf"

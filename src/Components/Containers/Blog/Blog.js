@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./Blog.css";
 import { Typography, Hidden, Button } from "@material-ui/core";
- 
-
+import { Link } from 'react-router-dom';
+import Routes from "../../../Routes";
 
 export default class Blog extends Component {
   render() {
@@ -10,7 +10,7 @@ export default class Blog extends Component {
       <div className="Blog">
         <div className="lander">
           <Typography variant="h1" color="primary">
-            coming soon
+            work in progress
           </Typography>
           <Hidden xsDown>
             <Typography variant="h6" color="secondary">
@@ -24,7 +24,6 @@ export default class Blog extends Component {
               textTransform: "lowercase",
               marginTop: '-4.5px',
               color: '#283593'
-
             }}
             color="primary.dark" 
             // variant="outlined" 
@@ -35,6 +34,9 @@ export default class Blog extends Component {
           </Button>
               while you're here
             </Typography>
+
+            <Button style={{fontSize: '18px', textTransform: 'lowercase'}} color="primary" size="md" component={Link} to="/Movies">Some of my favorite movies</Button>
+
           </Hidden>
           <br></br>
         </div>
