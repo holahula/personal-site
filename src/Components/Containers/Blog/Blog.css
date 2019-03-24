@@ -19,6 +19,7 @@
     margin-top: -90px;
     margin-left: 55vw;
     /* width: 144%; */
+
 }
 .Blog .lander h5 {
     /* color: #999; */
@@ -27,5 +28,20 @@
     margin-top: 15px;
     /* margin-left: 620px; */
     /* width: 144%; */
+    background: url(../Movies/Posters/inside-out.jpg) no-repeat -9999px -9999px;
+    background-size: 10%;
+
+}
+
+div#pl6 {
+    text-indent: -10000px;
+    background: url(../Movies/Posters/interstellar.jpg) no-repeat -9999px -9999px;
+    background-size: 10%;
+}
+
+div#pl5 {
+    text-indent: -10000px;
+    background: url(../Movies/Posters/arrival.jpg) no-repeat -9999px -9999px;
+    background-size: 10%;
 
 }

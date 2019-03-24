@@ -3,6 +3,10 @@ import "./Blog.css";
 import { Typography, Hidden, Button } from "@material-ui/core";
 import { Link } from 'react-router-dom';
 
+const posters = require.context('../Movies/Posters', true);
+
+const Lazycomponent1 = React.lazy(() => import('../Movies/Movies'))
+
 export default class Blog extends Component {
   render() {
     return (
@@ -39,7 +43,10 @@ export default class Blog extends Component {
           </Hidden>
           <br></br>
         </div>
+        <div className="pl5"></div>
+        <div className="pl6"></div>
       </div>
+
     );
   }
 }

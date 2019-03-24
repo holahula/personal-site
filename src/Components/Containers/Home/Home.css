@@ -1,6 +1,9 @@
 .Home .lander {
   padding: 100px 0;
   text-align: center;
+  background: url(../Movies/Posters/blade-runner-2049.jpg) no-repeat -9999px -9999px;
+  background-size: 10%;
+
 }
 
 /* .Home .lander h1 {
@@ -9,10 +12,14 @@
 } */
 
 .Home .lander h1 {
-  margin-top: 150px
-  /* top: 50% */
+  margin-top: 150px;
+  background: url(../Movies/Posters/whiplash.jpg) no-repeat -9999px -9999px;
+  background-size: 10%;
 }
 .Home .lander h5 {
   margin-top: 15px;
   /* color: #999; */
+  background: url(../Movies/Posters/carol.jpg) no-repeat -9999px -9999px;
+  background-size: 10%;
+
 }

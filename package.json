@@ -56,6 +56,7 @@
     "react-dev-utils": "^8.0.0",
     "react-dom": "^16.8.3",
     "react-id-swiper": "^2.1.0",
+    "react-lazy-load": "^3.0.13",
     "react-materialize": "^2.6.0",
     "react-pose": "^4.0.7",
     "react-router-bootstrap": "^0.24.4",
@@ -106,7 +107,6 @@
       "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
     },
     "transformIgnorePatterns": [
-      "node_modules/swiper",
       "[/\\\\]node_modules/(?!(swiper|dom7)/)",
       "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
       "^.+\\.module\\.(css|sass|scss)$"
@@ -127,9 +127,16 @@
       "jsx",
       "node"
     ],
+    "roots": [
+      "<rootDir>/src/"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "<rootDir>/src"
+    ],
     "watchPlugins": [
-      "/Users/austinjiang/Documents/GitHub/personal-site/node_modules/jest-watch-typeahead/filename.js",
-      "/Users/austinjiang/Documents/GitHub/personal-site/node_modules/jest-watch-typeahead/testname.js"
+      "<rootDir>/node_modules/jest-watch-typeahead/filename.js",
+      "<rootDir>/node_modules/jest-watch-typeahead/testname.js"
     ],
     "resetModules": true
   },
