@@ -1,11 +1,9 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import "./Movies.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { Typography } from "@material-ui/core";
 
 import Swiper from 'react-id-swiper';
-import { Virtual, Keyboard, Pagination, Navigation, EffectCoverflow } from 'swiper/dist/js/swiper.esm'
+import { Keyboard, Pagination, Navigation, EffectCoverflow } from 'swiper/dist/js/swiper.esm'
 
 const titles = [
   'Blade Runner 2049',
@@ -15,7 +13,6 @@ const titles = [
   'Interstellar',
   'Arrival',
 ];
-
 
 class Movies extends Component {
   constructor() {

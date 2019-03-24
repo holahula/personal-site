@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./Blog.css";
 import { Typography, Hidden, Button } from "@material-ui/core";
 import { Link } from 'react-router-dom';
-import Routes from "../../../Routes";
 
 export default class Blog extends Component {
   render() {

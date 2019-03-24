@@ -1,11 +1,9 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import "./About.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { Typography } from "@material-ui/core";
 
 import Swiper from 'react-id-swiper';
-import { Virtual, Keyboard, Pagination, Navigation, EffectCoverflow } from 'swiper/dist/js/swiper.esm'
+import { Keyboard, Pagination, Navigation, EffectCoverflow } from 'swiper/dist/js/swiper.esm'
 
 class About extends Component {
 

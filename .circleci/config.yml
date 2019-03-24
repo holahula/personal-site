@@ -36,9 +36,9 @@ jobs:
           name: Install node packages
           command: npm install
 
-      - run: 
-          name: fix security issues in packages
-          command: npm audit fix
+      # - run: 
+      #     name: fix security issues in packages
+      #     command: npm audit fix
 
       - save_cache:
           paths:
