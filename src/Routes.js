@@ -2,8 +2,8 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import { Home, About, NotFound, Blog, Movies} from "./Components/Containers";
 import "./Routes.css";
-// import Home from "./containers/Home.js"
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
+
 export default () =>
   <Route render={({ location }) => (
     <TransitionGroup>
