@@ -11,7 +11,7 @@ export default class Home extends Component {
             howdy partner
           </Typography>
           <Typography variant='h5' color='secondary'>
-            welcome to my crib
+            welcome to my site
           </Typography>
  
         </div>

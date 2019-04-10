@@ -55,7 +55,7 @@
     "react-bootstrap": "^0.32.4",
     "react-dev-utils": "^8.0.0",
     "react-dom": "^16.8.3",
-    "react-id-swiper": "^2.1.0",
+    "react-id-swiper": "^2.1.1",
     "react-lazy-load": "^3.0.13",
     "react-materialize": "^2.6.0",
     "react-pose": "^4.0.7",
